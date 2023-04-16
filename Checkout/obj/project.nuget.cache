@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PcmhGSWjyNdX66xMDmL1grFUAHAOMNFk83Ezjjs1QW77HkE7cAtOexI3I414WJqY8Au9zmUV2RE8Nk5oFw15hQ==",
+  "dgSpecHash": "6JbnjLptkgfZkTSzDQn6WHa082+kroA//iDYt8VVE1LKdHdjE2UCip8zOML7xHT/Ad/hr9FThpo5mstSrSTurg==",
   "success": true,
   "projectFilePath": "/Users/cornel/anca-projects/kata/shopping-cart/Checkout/Checkout.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/cornel/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

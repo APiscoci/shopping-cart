@@ -13,3 +13,5 @@
 /Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.pdb
 /Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.genruntimeconfig.cache
 /Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/ref/Checkout.dll
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.csproj.CopyComplete

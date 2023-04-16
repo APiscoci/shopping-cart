@@ -1,9 +1,8 @@
 namespace Checkout
 {
-	public class BasketProduct
+	public class BasketProduct : Product
 	{
-		public string StockKeepingUnit { get; set; }
-		public decimal UnitPrice { get; set; }
 		public int QuantityPerProduct { get; set; }
+		
 	}
 }

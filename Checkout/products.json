@@ -1,0 +1,19 @@
+[
+    {
+      "StockKeepingUnit": "A",
+      "UnitPrice": 10
+    },
+    {
+      "StockKeepingUnit": "B",
+      "UnitPrice": 15
+    },
+    {
+      "StockKeepingUnit": "C",
+      "UnitPrice": 40
+    },
+    {
+      "StockKeepingUnit": "D",
+      "UnitPrice": 55
+    }
+  ]
+  
