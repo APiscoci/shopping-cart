@@ -8,7 +8,9 @@ public class BasketTests
 	
 	public BasketTests()
 	{
-		_basket = new Basket();
+		var quantityPromotion = new Promotion("B", 3, 40m);
+		var promotions = new List<Promotion>{quantityPromotion};
+		_basket = new Basket(promotions);
 	}
 	
 	[Fact]
@@ -68,7 +70,7 @@ public class BasketTests
 		var total = _basket.GetTotalBasketCost();
 
 		// Then
-		Assert.Equal(40, total);
+		Assert.Equal(total, 40);
 	}
 	
 	
