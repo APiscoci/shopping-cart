@@ -1,0 +1,15 @@
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Checkout
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Checkout.deps.json
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Checkout.runtimeconfig.json
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Checkout.dll
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/bin/Debug/net7.0/Checkout.pdb
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.csproj.AssemblyReference.cache
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.AssemblyInfoInputs.cache
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.AssemblyInfo.cs
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.csproj.CoreCompileInputs.cache
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.dll
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/refint/Checkout.dll
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.pdb
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/Checkout.genruntimeconfig.cache
+/Users/cornel/anca-projects/kata/shopping-cart/Checkout/obj/Debug/net7.0/ref/Checkout.dll
