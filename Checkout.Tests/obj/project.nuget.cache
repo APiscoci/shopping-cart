@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vxE8RN+Dnws4sqO0M1F24FVtU+VV7DGhuOkO9OBAnt0ywrSGdewJMqTiTNAfOlYjwoBurlv6vxa/i7obyJisag==",
+  "dgSpecHash": "SS/VkI8Fx8zAa+InfQEB/McHuIXQx20nSen9th/Vw5iKhV5CacW1W9jLNFEe0ae0X/gbvAqm6EQYbMbdQKh97g==",
   "success": true,
   "projectFilePath": "/Users/cornel/anca-projects/kata/shopping-cart/Checkout.Tests/Checkout.Tests.csproj",
   "expectedPackageFiles": [
