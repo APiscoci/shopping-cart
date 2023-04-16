@@ -59,7 +59,6 @@ public class BasketTests
 		Assert.Equal(expectedPrice, total);
 	}
 	
-	
 	[Theory]
 	[InlineData(1, 15)]
 	[InlineData(2, 30)]
@@ -68,7 +67,7 @@ public class BasketTests
 	[InlineData(5, 70)]
 	[InlineData(6, 80)]
 	
-	public void SHouldApplyQuantityPromotionToItemB(int quantity, decimal expectedTotal)
+	public void ShouldApplyQuantityPromotionToProductB(int quantity, decimal expectedTotal)
 	{
 		// Given
 		_basket.AddProductToBasket(new BasketProduct{StockKeepingUnit = "B", UnitPrice = 15m, QuantityPerProduct = quantity});
@@ -80,5 +79,23 @@ public class BasketTests
 		Assert.Equal(total, expectedTotal);
 	}
 	
+		[Theory]
+	[InlineData(1, 55)]
+	[InlineData(2, 82.5)]
+	[InlineData(3, 137.5)]
+	[InlineData(4, 165)]
+	[InlineData(5, 220)]
+	[InlineData(6, 247.5)]
 	
+	public void ShouldApplyQuantityPromotionToProductD(int quantity, decimal expectedTotal)
+	{
+		// Given
+		_basket.AddProductToBasket(new BasketProduct{StockKeepingUnit = "D", UnitPrice = 55m, QuantityPerProduct = quantity});
+
+		// When
+		var total = _basket.GetTotalBasketCost();
+
+		// Then
+		Assert.Equal(total, expectedTotal);
+	}
 }
