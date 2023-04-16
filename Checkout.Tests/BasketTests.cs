@@ -9,7 +9,8 @@ public class BasketTests
 	public BasketTests()
 	{
 		var quantityPromotion = new QuantityPromotion("B", 3, 40m);
-		var promotions = new List<Promotion>{quantityPromotion};
+		var percentagePromotion = new PercentagePromotion("D", 2, 25);
+		var promotions = new List<Promotion>{quantityPromotion, percentagePromotion};
 		_basket = new Basket(promotions);
 	}
 	

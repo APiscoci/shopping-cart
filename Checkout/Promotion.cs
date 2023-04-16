@@ -25,12 +25,20 @@
 			}
 			
 			var numberOfPromotions = numberOfProducts / _requiredQuantity;
-			var unitPrice = promotionProducts.First().UnitPrice;
 		
-			var promotionPrice = _requiredQuantity * unitPrice;
-			var reductionPerPromotion = CalculatePromotion(promotionPrice);
+			var totalPriceWithoutPromotion = GetTotalPriceWthPromotion(numberOfProducts, promotionProducts.First().UnitPrice);
+			
+			var reductionPerPromotion = CalculatePromotion(totalPriceWithoutPromotion);
+			
 			var reduction = numberOfPromotions * reductionPerPromotion;
 			return reduction;
+		}
+		
+		private decimal GetTotalPriceWthPromotion(int numberOfProducts, decimal unitPrice)
+		{
+			var numberOfPromotions = numberOfProducts / _requiredQuantity;
+		
+			return _requiredQuantity * unitPrice;
 		}
 		
 		protected abstract decimal CalculatePromotion(decimal productsPrice);
