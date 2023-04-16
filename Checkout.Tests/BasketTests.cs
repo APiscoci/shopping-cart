@@ -8,7 +8,7 @@ public class BasketTests
 	
 	public BasketTests()
 	{
-		var quantityPromotion = new Promotion("B", 3, 40m);
+		var quantityPromotion = new QuantityPromotion("B", 3, 40m);
 		var promotions = new List<Promotion>{quantityPromotion};
 		_basket = new Basket(promotions);
 	}
@@ -60,17 +60,24 @@ public class BasketTests
 	}
 	
 	
-	[Fact]
-	public void SHouldApplyQuantityPromotionToItemB()
+	[Theory]
+	[InlineData(1, 15)]
+	[InlineData(2, 30)]
+	[InlineData(3, 40)]
+	[InlineData(4, 55)]
+	[InlineData(5, 70)]
+	[InlineData(6, 80)]
+	
+	public void SHouldApplyQuantityPromotionToItemB(int quantity, decimal expectedTotal)
 	{
 		// Given
-		_basket.AddProductToBasket(new BasketProduct{StockKeepingUnit = "B", UnitPrice = 15m, QuantityPerProduct = 3});
+		_basket.AddProductToBasket(new BasketProduct{StockKeepingUnit = "B", UnitPrice = 15m, QuantityPerProduct = quantity});
 
 		// When
 		var total = _basket.GetTotalBasketCost();
 
 		// Then
-		Assert.Equal(total, 40);
+		Assert.Equal(total, expectedTotal);
 	}
 	
 	

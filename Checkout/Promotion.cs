@@ -3,18 +3,15 @@
  
  namespace Checkout
  {
- 	public class Promotion
+ 	public abstract class Promotion
 	{
 		private readonly string _stockKeepingUnit;
 		private readonly int _requiredQuantity;
 		
-		private readonly decimal _finalPrice;
-		
-		public Promotion( string stockKeepingUnit, int requiredQuantity, decimal finalPrice )
+		public Promotion( string stockKeepingUnit, int requiredQuantity)
 		{
 			_stockKeepingUnit = stockKeepingUnit;
 			_requiredQuantity = requiredQuantity;
-			_finalPrice = finalPrice;
 		}
 		
 		public decimal GetReduction(IEnumerable<BasketProduct> products)
@@ -31,9 +28,11 @@
 			var unitPrice = promotionProducts.First().UnitPrice;
 		
 			var promotionPrice = _requiredQuantity * unitPrice;
-			var reductionPerPromotion = promotionPrice - _finalPrice;
+			var reductionPerPromotion = CalculatePromotion(promotionPrice);
 			var reduction = numberOfPromotions * reductionPerPromotion;
 			return reduction;
 		}
+		
+		protected abstract decimal CalculatePromotion(decimal productsPrice);
 	}
  }
